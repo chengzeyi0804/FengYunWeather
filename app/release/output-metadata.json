@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "me.wsj.fengyun",
+  "applicationId": "com.tomato.weather",
   "variantName": "processReleaseResources",
   "elements": [
     {

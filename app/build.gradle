@@ -22,7 +22,7 @@ android {
     compileSdkVersion 31
 
     defaultConfig {
-        applicationId "me.wsj.fengyun"
+        applicationId "com.tomato.weather"
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 19
