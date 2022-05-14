@@ -1,6 +1,6 @@
 include ':bg'
 include ':lib'
-rootProject.name = "FengYunWeather"
+rootProject.name = "TomatoWeather"
 include ':app'
 include ':plugin'
 include ':plugin-lib'
