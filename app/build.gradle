@@ -6,17 +6,17 @@ plugins {
     id 'kotlin-parcelize'
 }
 
-apply plugin: per.wsj.plugin.PublishPlugin
+//apply plugin: per.wsj.plugin.PublishPlugin
 //apply plugin: 'com.google.devtools.ksp'
 
-publishConfig {
-    publishUrl configProperties.get("publish_url")
-    ossEndpoint configProperties.get("oss_endpoint")
-    ossAkId configProperties.get("oss_ak_id")
-    ossAkSecret configProperties.get("oss_ak_secret")
-    apkPath "${rootDir}/app/release/app-release.apk"
-    versionDesc "1,阶段性bug修复\n2,美化UI"
-}
+//publishConfig {
+//    publishUrl configProperties.get("publish_url")
+//    ossEndpoint configProperties.get("oss_endpoint")
+//    ossAkId configProperties.get("oss_ak_id")
+//    ossAkSecret configProperties.get("oss_ak_secret")
+//    apkPath "${rootDir}/app/release/app-release.apk"
+//    versionDesc "1,阶段性bug修复\n2,美化UI"
+//}
 
 android {
     compileSdkVersion 31
