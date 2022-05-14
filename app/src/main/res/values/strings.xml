@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">风云天气</string>
+    <string name="app_name">番茄天气王</string>
     <string name="today">今天</string>
     <string name="tomorrow">明天</string>
     <string name="after_t">后天</string>

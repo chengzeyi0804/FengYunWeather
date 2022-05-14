@@ -33,7 +33,7 @@
             android:layout_gravity="center_horizontal"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"
-            tools:text="风云天气 v1.0.1" />
+            tools:text="番茄天气王 v1.0.1" />
 
         <TextView
             android:id="@+id/tvVersionDescribe"
