@@ -7,7 +7,6 @@ plugins {
 }
 
 //apply plugin: per.wsj.plugin.PublishPlugin
-//apply plugin: 'com.google.devtools.ksp'
 
 //publishConfig {
 //    publishUrl configProperties.get("publish_url")
@@ -25,8 +24,8 @@ android {
         applicationId "com.tomato.weather"
         minSdkVersion 21
         targetSdkVersion 31
-        versionCode 19
-        versionName "2.0.2"
+        versionCode 1
+        versionName "1.0.0"
 
         multiDexEnabled true
 

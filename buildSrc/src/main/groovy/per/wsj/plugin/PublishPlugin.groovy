@@ -17,14 +17,14 @@ class PublishPlugin implements Plugin<Project> {
         PublishTask publishTask
 
         project.afterEvaluate {
-            publishTask = project.getTasks().create("publish_fengyun", PublishTask.class)
+            publishTask = project.getTasks().create("publish_tomato_weather", PublishTask.class)
         }
 
         project.gradle.buildFinished {
             android.applicationVariants.all { variant ->
                 if (variant.buildType.name == "release") {
                     println("-----------------run every time when release--------------------")
-//                    publishTask.run()
+                    publishTask.run()
                 }
             }
         }

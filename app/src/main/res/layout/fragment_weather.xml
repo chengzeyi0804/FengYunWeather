@@ -31,6 +31,8 @@
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    tools:textColor="@android:color/black"
+                    tools:visibility="visible"
                     tools:text="25" />
 
                 <TextView
@@ -40,11 +42,15 @@
                     android:layout_marginStart="9dp"
                     android:textColor="@color/white80"
                     android:textSize="18sp"
+                    tools:textColor="@android:color/black"
+                    tools:visibility="visible"
                     app:layout_constraintBaseline_toBaselineOf="@+id/tv_today_tmp"
                     app:layout_constraintLeft_toRightOf="@+id/tv_today_tmp"
                     tools:text="多云" />
 
                 <TextView
+                    tools:textColor="@android:color/black"
+                    tools:visibility="visible"
                     android:id="@+id/tvUnit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -105,6 +111,8 @@
                     android:textColor="@color/white"
                     android:textSize="14sp"
                     android:visibility="gone"
+                    tools:textColor="@android:color/black"
+                    tools:visibility="visible"
                     app:drawableLeftCompat="@drawable/ic_air_condition"
                     app:use_plugin_skin="true"
                     tools:text="36 空气优" />

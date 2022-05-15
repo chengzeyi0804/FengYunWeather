@@ -23,7 +23,7 @@ class PublishTask extends DefaultTask {
     def publishConfig
 
     PublishTask() {
-        setGroup("publish_fengyun")
+        setGroup("publish_tomato_weather")
         setDescription("上传apk到云存储，并提交到服务端")
         def android = project.extensions.getByType(AppExtension)
         versionCode = android.defaultConfig.versionCode
@@ -40,14 +40,14 @@ class PublishTask extends DefaultTask {
     @TaskAction
     void run() {
         println("---------------begin publish------------------")
-        def apkName = "fengyun-weather-" + versionName + ".apk"
+        def apkName = "tomato-weather-" + versionName + ".apk"
         def apkFile = new File(publishConfig.apkPath)
         def newPath = apkFile.getParentFile().getAbsolutePath() + File.separator + apkName
         // 重命名
         apkFile.renameTo(newPath)
         // 改为新路径
         publishConfig.apkPath = newPath
-        upload(apkName)
+//        upload(apkName)
     }
 
     /**
