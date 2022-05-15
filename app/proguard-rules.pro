@@ -87,8 +87,8 @@
 #-applymapping xxx
 
 # 保留实体类，用于json解析
--keep class me.wsj.fengyun.bean.**{*;}
--keep class me.wsj.fengyun.db.entity.**{*;}
+-keep class com.tomato.weather.bean.**{*;}
+-keep class com.tomato.weather.db.entity.**{*;}
 
 #Okhttp
 -keep class com.squareup.okhttp3.** {*;}
@@ -148,7 +148,7 @@
     public static ** valueOf(java.lang.String);
 }
 
--keep public class me.wsj.fengyun.R$*{
+-keep public class com.tomato.weather.R$*{
 public static final int *;
 }
 

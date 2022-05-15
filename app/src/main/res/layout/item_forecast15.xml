@@ -33,20 +33,20 @@
         android:textSize="14sp"
         tools:text="晴" />
 
-    <me.wsj.fengyun.view.plugin.PluginImageView
+    <com.tomato.weather.view.plugin.PluginImageView
         android:id="@+id/ivDay"
         android:layout_width="24dp"
         android:layout_height="24dp"
         android:layout_marginTop="8dp"
         tools:src="@drawable/icon_100d" />
 
-    <me.wsj.fengyun.view.TempChart
+    <com.tomato.weather.view.TempChart
         android:id="@+id/tempChart"
         android:layout_width="match_parent"
         android:layout_height="140dp"
         android:layout_marginTop="16dp" />
 
-    <me.wsj.fengyun.view.plugin.PluginImageView
+    <com.tomato.weather.view.plugin.PluginImageView
         android:id="@+id/iv_night"
         android:layout_width="24dp"
         android:layout_height="24dp"

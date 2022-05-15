@@ -15,7 +15,7 @@
             android:layout_height="100dp"
             android:layout_marginTop="16dp">
 
-            <me.wsj.fengyun.view.AirConditionView
+            <com.tomato.weather.view.AirConditionView
                 android:id="@+id/airConditionView"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

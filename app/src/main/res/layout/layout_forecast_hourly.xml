@@ -47,7 +47,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent" />
 
-            <me.wsj.fengyun.view.horizonview.IndexHorizontalScrollView
+            <com.tomato.weather.view.horizonview.IndexHorizontalScrollView
                 android:id="@+id/horizontalScrollView"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
@@ -55,12 +55,12 @@
                 app:layout_constraintLeft_toRightOf="@+id/tvLineMaxTmp"
                 app:layout_constraintRight_toRightOf="parent">
 
-                <me.wsj.fengyun.view.horizonview.HourlyForecastView
+                <com.tomato.weather.view.horizonview.HourlyForecastView
                     android:id="@+id/hourly"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent" />
 
-            </me.wsj.fengyun.view.horizonview.IndexHorizontalScrollView>
+            </com.tomato.weather.view.horizonview.IndexHorizontalScrollView>
             <!--<FrameLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"

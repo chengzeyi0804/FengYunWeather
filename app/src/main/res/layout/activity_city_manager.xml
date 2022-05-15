@@ -18,7 +18,7 @@
         android:textColor="@color/color_999" />
 
     <!--<androidx.recyclerview.widget.RecyclerView-->
-    <me.wsj.lib.view.SwipeDeleteRecyclerView
+    <com.tomato.lib.view.SwipeDeleteRecyclerView
         android:id="@+id/recycleView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

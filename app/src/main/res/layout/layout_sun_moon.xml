@@ -23,7 +23,7 @@
             app:layout_constraintRight_toRightOf="parent"
             tools:text="满月" />
 
-        <me.wsj.fengyun.view.skyview.SunView
+        <com.tomato.weather.view.skyview.SunView
             android:id="@+id/sun_view"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -37,7 +37,7 @@
             app:sun_font_color="@color/color_666"
             app:sun_font_size="12sp" />
 
-        <me.wsj.fengyun.view.skyview.SunView
+        <com.tomato.weather.view.skyview.SunView
             android:id="@+id/moon_view"
             android:layout_width="0dp"
             android:layout_height="match_parent"

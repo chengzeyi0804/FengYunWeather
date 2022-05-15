@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/today" />
 
-    <me.wsj.fengyun.view.plugin.PluginImageView
+    <com.tomato.weather.view.plugin.PluginImageView
         android:id="@+id/iv3fDay"
         android:layout_width="32dp"
         android:layout_height="32dp"

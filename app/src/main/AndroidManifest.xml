@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="me.wsj.fengyun">
+    package="com.tomato.weather">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于进行网络定位 -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于访问GPS定位 -->
@@ -23,7 +23,7 @@
     </queries>
 
     <application
-        android:name=".MyApp"
+        android:name="com.tomato.weather.MyApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -33,9 +33,9 @@
         android:theme="@style/Theme.FengYunWeather.NoActionBar"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".ui.activity.UserInfoActivity" />
+            android:name="com.tomato.weather.ui.activity.UserInfoActivity" />
         <activity
-            android:name=".ui.activity.LoginActivity"
+            android:name="com.tomato.weather.ui.activity.LoginActivity"
             android:exported="false">
             <intent-filter>
                 <action android:name="me.wsj.fengyun.LOGIN" />
@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.ThemeActivity"
+            android:name="com.tomato.weather.ui.activity.ThemeActivity"
             android:exported="false">
             <intent-filter>
                 <action android:name="me.wsj.fengyun.THEME_SETTING" />
@@ -64,12 +64,12 @@
         </provider>
 
         <service
-            android:name=".service.WidgetService"
+            android:name="com.tomato.weather.service.WidgetService"
             android:enabled="true"
             android:exported="true" />
 
         <receiver
-            android:name=".widget.WeatherWidget"
+            android:name="com.tomato.weather.widget.WeatherWidget"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -81,10 +81,10 @@
         </receiver>
 
         <activity
-            android:name=".ui.activity.HomeActivity"
+            android:name="com.tomato.weather.ui.activity.HomeActivity"
             android:launchMode="singleTask" />
         <activity
-            android:name=".ui.activity.SplashActivity"
+            android:name="com.tomato.weather.ui.activity.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -106,10 +106,10 @@
             android:exported="false" />
 
         <activity
-            android:name=".ui.activity.SettingsActivity"
+            android:name="com.tomato.weather.ui.activity.SettingsActivity"
             android:launchMode="singleTask" />
         <activity
-            android:name=".ui.activity.CityManagerActivity"
+            android:name="com.tomato.weather.ui.activity.CityManagerActivity"
             android:exported="false"
             android:launchMode="singleTask">
             <intent-filter>
@@ -119,14 +119,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activity.AboutActivity"
+            android:name="com.tomato.weather.ui.activity.AboutActivity"
             android:launchMode="singleTask" />
         <activity
-            android:name=".ui.activity.AddCityActivity"
+            android:name="com.tomato.weather.ui.activity.AddCityActivity"
             android:launchMode="singleTask"
             android:theme="@style/Left2Right" />
         <activity
-            android:name=".ui.activity.FeedBackActivity"
+            android:name="com.tomato.weather.ui.activity.FeedBackActivity"
             android:launchMode="singleTask" /> <!-- qq sdk -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"

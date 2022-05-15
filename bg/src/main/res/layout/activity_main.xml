@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <me.wsj.lib.view.SwipeDeleteRecyclerView
+    <com.tomato.lib.view.SwipeDeleteRecyclerView
         android:id="@+id/rvAll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
