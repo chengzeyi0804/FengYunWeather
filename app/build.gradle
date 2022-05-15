@@ -47,12 +47,22 @@ android {
 
     signingConfigs {
         debug {
-            if (configProperties != null && configProperties.get("filename") != null){
-                storeFile file(configProperties.get("filename"))
-                storePassword configProperties.get("storePassword")
-                keyAlias configProperties.get("keyAlias")
-                keyPassword configProperties.get("keyPassword")
-            }
+//            storeFile file('/Users/chenglei/work/github/vnd-cl-keystore.jks')
+//            keyAlias 'androiddebugkey'
+//            storePassword '1qaz2wsx'
+//            keyPassword '1qaz2wsx'
+//            if (configProperties != null && configProperties.get("filename") != null){
+//                storeFile file(configProperties.get("filename"))
+//                storePassword configProperties.get("storePassword")
+//                keyAlias configProperties.get("keyAlias")
+//                keyPassword configProperties.get("keyPassword")
+//            }
+        }
+        release {
+            keyAlias 'androidreleasekey'
+            keyPassword '1qaz2wsx'
+            storePassword '1qaz2wsx'
+            storeFile file('/Users/chenglei/work/github/vnd-cl-keystore.jks')
         }
     }
 
@@ -61,7 +71,8 @@ android {
             zipAlignEnabled true
             shrinkResources true
             minifyEnabled true
-            manifestPlaceholders = [amap_app_key: configProperties.get("gao_de_app_key")]
+            manifestPlaceholders = [amap_app_key: "4331b22037f7866b81220791a6d2b6d7"]
+//            manifestPlaceholders = [amap_app_key: configProperties.get("gao_de_app_key")]
             buildConfigField('String', 'HeFengKey', configProperties.get("he_feng_app_key"))
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
@@ -69,7 +80,8 @@ android {
             minifyEnabled false
             signingConfig signingConfigs.debug
             // todo 请在local.properties中配置天气及定位的api key
-            manifestPlaceholders = [amap_app_key: configProperties.get("gao_de_app_key")]
+            manifestPlaceholders = [amap_app_key: "4331b22037f7866b81220791a6d2b6d7"]
+//            manifestPlaceholders = [amap_app_key: configProperties.get("gao_de_app_key")]
             buildConfigField('String', 'HeFengKey', configProperties.get("he_feng_app_key"))
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
